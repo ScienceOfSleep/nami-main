@@ -19,15 +19,15 @@ export default function Home({supports}) {
         <h1>
           Nami Main
         </h1>
-          <h2>Nami</h2>
-          {supports.map((support) =>{
-              if (support.name === "Nami"){
-                  return <div>
-                      <h3>MS: {support.ms}</h3>
-                      <p>AA: {support.range.aa} Q: {support.range.q} W: {support.range.w} E: {support.range.e} R: {support.range.r}</p>
-                  </div>
-              }
-              })}
+        <h2>Nami</h2>
+        {supports.map((support) =>{
+            if (support.name === "Nami"){
+                return <div>
+                    <h3>MS: {support.ms}</h3>
+                    <p>AA: {support.range.aa} Q: {support.range.q} W: {support.range.w} E: {support.range.e} R: {support.range.r}</p>
+                </div>
+            }
+        })}
         <form>
             <label htmlFor="opponent">Opponent</label>
             <select
@@ -51,16 +51,6 @@ export default function Home({supports}) {
               <p>AA: {opponentObject.range.aa} Q: {opponentObject.range.q} W: {opponentObject.range.w} E: {opponentObject.range.e} R: {opponentObject.range.r}</p>
               <p>{opponentObject.notes}</p>
           </div>
-        {/*<ul>*/}
-        {/*    {supports.map((support) => (*/}
-        {/*        <li key={support.name}>*/}
-        {/*            <h2>{support.name}</h2>*/}
-        {/*            <h3>MS: {support.ms}</h3>*/}
-        {/*            <p>AA: {support.range.aa} Q: {support.range.q} W: {support.range.w} E: {support.range.e} R: {support.range.r}</p>*/}
-        {/*            <p>{support.notes}</p>*/}
-        {/*        </li>*/}
-        {/*    ))}*/}
-        {/*</ul>*/}
       </main>
     )
 }
