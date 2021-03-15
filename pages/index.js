@@ -19,6 +19,15 @@ export default function Home({supports}) {
         <h1>
           Nami Main
         </h1>
+          <h2>Nami</h2>
+          {supports.map((support) =>{
+              if (support.name === "Nami"){
+                  return <div>
+                      <h3>MS: {support.ms}</h3>
+                      <p>AA: {support.range.aa} Q: {support.range.q} W: {support.range.w} E: {support.range.e} R: {support.range.r}</p>
+                  </div>
+              }
+              })}
         <form>
             <label htmlFor="opponent">Opponent</label>
             <select
