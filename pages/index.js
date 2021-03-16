@@ -55,7 +55,7 @@ export default function Home({supports}) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const { db } = await connectToDatabase();
     const supports = await db
         .collection("Supports")
