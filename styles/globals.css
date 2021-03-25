@@ -1,3 +1,9 @@
+body{
+  --blue: #1CB4BE;
+  --green: #45C889;
+  --dark-green: #349465;
+}
+
 html,
 body {
   padding: 0;

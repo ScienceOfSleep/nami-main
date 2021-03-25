@@ -1,6 +1,8 @@
 import { connectToDatabase } from '../util/mongodb'
 import {useState, useEffect} from "react"
 import OpponentSelect from "../components/opponent-select";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Home({supports}) {
     const [ opponent, setOpponent ] = useState("Swain")
@@ -19,6 +21,7 @@ export default function Home({supports}) {
 
     return (
       <main>
+        <Header/>
         <h1>
           Nami Main
         </h1>
@@ -44,6 +47,7 @@ export default function Home({supports}) {
                 </div>
             }
           </div>
+          <Footer/>
       </main>
     )
 }

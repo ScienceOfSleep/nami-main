@@ -1,0 +1,6 @@
+.select{
+    background-color: var(--dark-green);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+}

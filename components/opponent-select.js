@@ -1,3 +1,5 @@
+import styles from "./opponent-select.module.css"
+
 const OpponentSelect = ({supports, opponent, setOpponent}) =>{
     return <form>
         <label htmlFor="opponent">Opponent</label>
@@ -6,6 +8,7 @@ const OpponentSelect = ({supports, opponent, setOpponent}) =>{
             defaultValue="Swain"
             onChange={event => setOpponent(event.target.value)}
             onBlur={event => setOpponent(event.target.value)}
+            className={styles.select}
         >
             {supports.map((support) =>
                 <option
