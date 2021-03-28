@@ -1,0 +1,29 @@
+.container{
+    border: 5px solid var(--green);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.vs{
+    border: 3px solid var(--blue);
+    border-radius: 100%;
+    padding: 6px;
+    height: fit-content;
+}
+
+.list{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.champ{
+    width: 45%;
+    text-align: center;
+}
