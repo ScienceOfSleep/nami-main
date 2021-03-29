@@ -1,8 +1,8 @@
 import styles from "./opponent-select.module.css"
 
 const OpponentSelect = ({supports, opponent, setOpponent}) =>{
-    return <form>
-        <label htmlFor="opponent">Opponent</label>
+    return <form className={styles.container}>
+        <label htmlFor="opponent" className={styles.label}>Opponent:</label>
         <select
             id="opponent"
             defaultValue="Swain"

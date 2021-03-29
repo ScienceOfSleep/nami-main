@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Title from "../components/title";
 import StatsContainer from "../components/stats-container";
+import Layout from "../components/layout";
 
 export default function Home({supports}) {
     const [ opponent, setOpponent ] = useState("Swain")
@@ -24,9 +25,11 @@ export default function Home({supports}) {
     return (
       <main>
         <Header/>
+        <Layout>
         <Title/>
         <OpponentSelect supports={supports} opponent={opponent} setOpponent={setOpponent}/>
         <StatsContainer supports={supports} opponentObject={opponentObject}/>
+        </Layout>
         <Footer/>
       </main>
     )

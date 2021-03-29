@@ -4,8 +4,9 @@
     width: 90%;
     max-width: 800px;
     display: flex;
-    margin: 0 auto;
+    margin: 3rem auto;
     justify-content: center;
+    box-shadow: #b0c4de 3px 4px 4px;
 }
 
 .vs{
