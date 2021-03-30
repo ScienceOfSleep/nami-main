@@ -1,13 +1,13 @@
 import styles from "./select.module.css"
 
-const OpponentSelect = ({supports, setOpponent}) =>{
+const AllySelect = ({supports, setAlly}) =>{
     return <form className={styles.container}>
-        <label htmlFor="opponent" className={styles.label}>Enemy Support:</label>
+        <label htmlFor="opponent" className={styles.label}>Your Support:</label>
         <select
             id="opponent"
-            defaultValue="Swain"
-            onChange={event => setOpponent(event.target.value)}
-            onBlur={event => setOpponent(event.target.value)}
+            defaultValue="Nami"
+            onChange={event => setAlly(event.target.value)}
+            onBlur={event => setAlly(event.target.value)}
             className={styles.select}
         >
             {supports.map((support) =>
@@ -22,4 +22,4 @@ const OpponentSelect = ({supports, setOpponent}) =>{
     </form>
 }
 
-export default OpponentSelect
+export default AllySelect

@@ -6,10 +6,14 @@ import Footer from "../components/footer";
 import Title from "../components/title";
 import StatsContainer from "../components/stats-container";
 import Layout from "../components/layout";
+import AllySelect from "../components/ally-select";
+import SelectContainer from "../components/select-container";
 
 export default function Home({supports}) {
     const [ opponent, setOpponent ] = useState("Swain")
     const [ opponentObject, setOpponentObject] = useState([])
+    const [ ally, setAlly ] = useState("Nami")
+    const [ allyObject, setAllyObject] = useState([])
 
     useEffect(() => {
         setOpponentObject([])
@@ -22,13 +26,27 @@ export default function Home({supports}) {
         [opponent, opponentObject]
     })
 
+    useEffect(() => {
+        setAllyObject([])
+
+        supports.map((support) => {
+            if (support.name === ally){
+                setAllyObject(support)
+            }
+        }),
+        [ally, allyObject]
+    })
+
     return (
       <main>
         <Header/>
         <Layout>
         <Title/>
-        <OpponentSelect supports={supports} opponent={opponent} setOpponent={setOpponent}/>
-        <StatsContainer supports={supports} opponentObject={opponentObject}/>
+        <SelectContainer>
+            <AllySelect supports={supports} setAlly={setAlly}/>
+            <OpponentSelect supports={supports} setOpponent={setOpponent}/>
+        </SelectContainer>
+        <StatsContainer supports={supports} opponentObject={opponentObject} allyObject={allyObject}/>
         </Layout>
         <Footer/>
       </main>
