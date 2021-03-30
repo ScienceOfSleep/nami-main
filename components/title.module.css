@@ -3,12 +3,12 @@
     margin: 0 auto;
     position: relative;
     --font-size: 4rem;
-    padding: 2rem 0;
+    padding: 1vh 0;
 }
 
 .underline{
     position: absolute;
-    top: calc(var(--font-size) * 1.1 + 2rem);
+    top: calc(var(--font-size) * 1.1 + 1vh);
     height: 3px;
     width: 100%;
     stroke: var(--blue);

@@ -40,6 +40,7 @@ export async function getStaticProps() {
     const supports = await db
         .collection("Supports")
         .find({})
+        .sort({name: 1})
         .toArray();
     return {
         props: {

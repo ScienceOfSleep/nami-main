@@ -1,5 +1,5 @@
 .select{
-    /*background-color: var(--dark-green);*/
+    background-color: #ffffff;
     color: #000000;
     font-size: 24px;
     font-weight: 500;
@@ -10,7 +10,7 @@
 
 .container{
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2vh;
     width: fit-content;
 }
 
@@ -18,4 +18,10 @@
     font-size: 24px;
     font-weight: 600;
     padding-right: 8px;
+}
+
+@media screen and (min-width: 1120px) {
+    .container{
+        padding: 5vh;
+    }
 }
