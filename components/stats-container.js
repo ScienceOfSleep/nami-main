@@ -1,9 +1,10 @@
 import styles from "./stats-container.module.css"
+import ChampName from "./champ-name";
 
 const StatsContainer = ({supports, opponentObject}) =>{
     return <div className={styles.container}>
         <div className={styles.champ}>
-            <h2>Nami</h2>
+            <ChampName name="Nami"/>
             {supports.map((support) =>{
                 if (support.name === "Nami"){
                     return <ul className={styles.list}>
@@ -21,7 +22,7 @@ const StatsContainer = ({supports, opponentObject}) =>{
         <h2 className={styles.vs}>VS</h2>
         {opponentObject.length === 0 ? <h2>Opponent</h2> :
             <div className={styles.champ}>
-                <h2>{opponentObject.name}</h2>
+                <ChampName name={opponentObject.name}/>
                 <ul className={styles.list}>
                     <li>MS: {opponentObject.ms}</li>
                     <li>AA: {opponentObject.range.aa}</li>

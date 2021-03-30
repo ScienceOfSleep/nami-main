@@ -2,11 +2,13 @@
     border: 5px solid var(--green);
     border-radius: 20px;
     width: 90%;
-    max-width: 800px;
+    max-width: 600px;
     display: flex;
     margin: 3rem auto;
+    padding: 2px;
     justify-content: center;
     box-shadow: #b0c4de 3px 4px 4px;
+    font-size: 18px;
 }
 
 .vs{
@@ -22,6 +24,7 @@
     padding: 0;
     width: fit-content;
     margin: 0 auto;
+    font-size: 20px;
 }
 
 .champ{
