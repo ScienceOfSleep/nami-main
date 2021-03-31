@@ -18,8 +18,3 @@
     font-weight: 600;
     padding-right: 8px;
 }
-
-@media screen and (min-width: 1120px) {
-    .container{
-    }
-}

@@ -8,6 +8,7 @@ import StatsContainer from "../components/stats-container";
 import Layout from "../components/layout";
 import AllySelect from "../components/ally-select";
 import SelectContainer from "../components/select-container";
+import { NextSeo } from 'next-seo';
 
 export default function Home({supports}) {
     const [ opponent, setOpponent ] = useState("Swain")
@@ -39,6 +40,10 @@ export default function Home({supports}) {
 
     return (
       <main>
+        <NextSeo
+            title="Nami Main"
+            description="LoL support match-up, move-speed, and range stat-checking tool. Space and trade with confidence."
+        />
         <Header/>
         <Layout>
         <Title/>
