@@ -46,11 +46,11 @@ export default function Home({supports}) {
         />
         <Header/>
         <Layout>
-        <Title/>
-        <SelectContainer>
-            <AllySelect supports={supports} setAlly={setAlly}/>
-            <OpponentSelect supports={supports} setOpponent={setOpponent}/>
-        </SelectContainer>
+            <Title/>
+            <SelectContainer>
+                <AllySelect supports={supports} setAlly={setAlly}/>
+                <OpponentSelect supports={supports} setOpponent={setOpponent}/>
+            </SelectContainer>
         <StatsContainer supports={supports} opponentObject={opponentObject} allyObject={allyObject}/>
         </Layout>
         <Footer/>

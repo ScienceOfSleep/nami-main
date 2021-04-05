@@ -19,3 +19,12 @@
     font-family: 'Lobster', cursive;
     margin: 0;
 }
+
+@media screen and (min-width: 1120px) {
+    .container{
+        padding: 3vh 0 1vh;
+    }
+    .underline{
+        top: calc(var(--font-size) * 1.1 + 3vh);
+    }
+}

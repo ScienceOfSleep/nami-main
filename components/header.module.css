@@ -1,4 +1,8 @@
 .header{
-    height: 5vh;
+    height: 105px;
     background-color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
